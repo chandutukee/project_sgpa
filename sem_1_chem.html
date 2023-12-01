@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st SEM SGPA Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(tttt.jpg); background-size: cover;">
+    <br><br><br>
+    <div class="head1" style=" height: 90px;">
+        <div class="img1">
+            <img src="logo_last.png" alt="logo" style="width: 120px; height: 130px; margin-left: 60px;">
+            <h1 style="font-size: 40px; font-weight: 800; color: black; margin-left: 22%; margin-top: -85px;">First
+                Semester SGPA (CHEM Cycle)
+            </h1>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="row" style="margin-left: 20%; ">
+        <div class="col">
+            <input type="number" id="mark1" required required placeholder="21MAT11"
+                style="text-align: center; width: 400px; height: 50px; border: 1px solid gray; border-radius: 4px;">
+        </div>
+        <br>
+        <div class="col">
+            <input type="number" id="mark2" required placeholder="21CHE12"
+                style="text-align: center; width: 400px; height: 50px; border: 1px solid gray; border-radius: 4px;">
+        </div>
+        <br>
+        <div class="col">
+            <input type="number" id="mark3" required placeholder="21PSP13"
+                style="text-align: center; width: 400px; height: 50px; border: 1px solid gray; border-radius: 4px;">
+        </div>
+        <br>
+        <div class="col">
+            <input type="number" id="mark4" required placeholder="21ELN14"
+                style="text-align: center; width: 400px; height: 50px; border: 1px solid gray; border-radius: 4px;">
+        </div>
+        <br>
+        <div class="col">
+            <input type="number" id="mark5" required placeholder="21EME15"
+                style="text-align: center; width: 400px; height: 50px; border: 1px solid gray; border-radius: 4px;">
+        </div>
+    </div>
+    <div class="row" style="margin-left: 55%; margin-top: -322px;">
+        <div class="col">
+            <input type="number" id="mark6" required placeholder="21CHEL16"
+                style="text-align: center; width: 400px; height: 50px; border: 1px solid gray; border-radius: 4px;">
+        </div>
+        <br>
+        <div class="col">
+            <input type="number" id="mark7" required
+                placeholder="21CPL17 "
+                style="text-align: center; width: 400px; height: 50px; border: 1px solid gray; border-radius: 4px;">
+        </div>
+        <br>
+        <div class="col">
+            <input type="number" id="mark8" required placeholder="21EGH18"
+                style="text-align: center; width: 400px; height: 50px; border: 1px solid gray; border-radius: 4px;">
+        </div>
+        <br>
+        <div class="col">
+            <input type="number" id="mark9" required placeholder="21IDT19"
+                style="text-align: center; width: 400px; height: 50px; border: 1px solid gray; border-radius: 4px;">
+        </div>
+    </div>
+    <br><br><br>
+
+    <button type="submit" onclick="Validate()"
+        style="text-align: center; width: 400px; margin-left: 37%; margin-top: 60px; height: 50px; cursor: pointer; border: 1px solid gray; border-radius: 4px; font-size: large; font-weight: 600;"><b>Calculate
+            SGPA</b></button>
+    <br><br><br><br>
+
+    <div class="contaier"
+        style="width: 320px; height: 60px; border: 1px solid gray; font-size: large; font-weight: 600; border-radius: 8px; background: gray; text-align: center; margin-left: 40%;">
+        <br><b>SGPA: <span id="s1"></span></b>
+    </div>
+    <br><br><br><br>
+    <script src="script_1_chem.js"></script>
+</body>
+
+</html>
